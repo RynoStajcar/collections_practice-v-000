@@ -30,11 +30,12 @@ end
 def sum_array(array)
   array.inject(0) {|sum,x| sum+x }
 end
-binding.pry
+require 'pry'
 def add_s(array)
   array.collect do |word|
     if word!="feet"
       word + "s"
+      binding.pry
     end
   end
 end
