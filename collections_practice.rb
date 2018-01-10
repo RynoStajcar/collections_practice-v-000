@@ -34,8 +34,8 @@ require 'pry'
 def add_s(array)
   binding.pry
   array.collect do |word|
-    if word!="feet"
-      word + "s"
+    if word=="feet"
+    else word + "s"
     end
   end
 end
