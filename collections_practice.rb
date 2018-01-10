@@ -32,10 +32,11 @@ def sum_array(array)
 end
 require 'pry'
 def add_s(array)
+  binding.pry
   array.collect do |word|
     if word!="feet"
       word + "s"
     end
   end
 end
-binding.pry
+
